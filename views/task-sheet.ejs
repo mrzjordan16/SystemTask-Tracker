@@ -1,0 +1,227 @@
+<%- include('component/header.ejs') %>
+ <!--start wrapper-->
+    <div class="wrapper">
+       <!--start sidebar wrapper-->
+       
+
+       <%- include('component/side-bar.ejs') %>
+         <%- include('component/top-nav.ejs') %>
+
+
+        
+         <div class="container-fluid task-update" id="task-sheet-completed">
+           <div id="complete-task-sheet-upper">
+          <div class="row">
+          <div class="col-8">
+            <div class="button-group">
+              <button type="button" class="btn btn-warning px-5 m-3">Add a New Task</button>
+              <!-- <button type="button" class="btn btn-warning px-5">Edit Whole Task</button> -->
+              <button class="btn btn-outline-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example2" type="button"><span>Excel</span></button>
+          </div>
+          </div>
+          <div class="col-4">
+             <div class="row">
+               <div class="col-4">
+                <label>Filter By</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected="">Status</option>
+                  <option value="1">Not-Started</option>
+                  <option value="2">Halted</option>
+                  <option value="3">Started</option>
+                  <option value="4">On-Going</option>
+                  <option value="5">Completed</option>
+                </select>
+               </div>
+               <div class="col-4">
+                <label>Filter By</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected="">Area</option>
+                  <option value="1">Pipeline</option>
+                  <option value="2">Azure</option>
+                  <option value="3">Infrastructure</option>
+                  <option value="4">DevSecOps</option>
+                  <option value="5">ML/AI</option>
+                </select>
+               </div>
+               <div class="col-4">
+                <label>Filter By</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected="">Employee Name</option>
+                  <option value="1">Osman Shaikh</option>
+                  <option value="2">Ahmer Khan</option>
+                  <option value="3">Ayesha Siddiqa</option>
+                  <option value="4">Mirza Nehal Baig</option>
+                  <option value="5">M Farhan</option>
+                </select>
+               </div>
+             </div>
+          </div>
+          </div>
+        </div>
+          <div class="card radius-10">
+            <div class="card-body">
+              <div id="complete-task-sheet">
+              <div class="d-flex align-items-center" >
+                <h6 class="mb-0">Complete Task Sheet</h6>
+                <div class="fs-5 ms-auto dropdown">
+                   <div class="dropdown-toggle dropdown-toggle-nocaret cursor-pointer" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></div>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><hr class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                 </div>
+               </div>
+               <!--TABLE RESPONSIVE START-->
+               <div class="table-responsive mt-2">
+                <table class="table align-middle mb-0" id="taskSheet-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Employee Name</th>
+                      <th>Area</th>
+                      <th>Sub-Area</th>
+                      <th>Type</th>
+                      <th>Project</th>
+                      <th>Task Detail</th>
+                      <th>Status</th>
+                      <th>Co-Employee</th>
+                      <th>Assigned Date</th>
+                      <th>Start Date</th>
+                      <th>DeadLine</th>
+                      <th>End Date</th>
+                      <th>Assigned By</th>
+                      <th>Comments</th>
+                      <th>Edit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                   <!--Table Row Starting-->
+                    <tr>
+                      <td>Osman Shaikh</td>
+                      <td>
+                          <h6 class="product-name mb-1">Pipelines</h6>
+                      </td>
+                      <td>Jenkins</td>
+                      <td>Implementation</td>
+                      <td>Regeneron</td>
+                      <td>PWD Deployment Documentation and Estimation and Implementation</td>
+                      <td><span class="badge alert-warning">On-Going</span></td>
+                      <td>Arslan/Alina</td>
+                      <td>8/10/2021</td>
+                      <td>8/10/2021</td>
+                      <td></td>
+                      <td></td>
+                      <td>Shoaib Masood</td>
+                      <td>Deployments are done, need further configurations and changes</td>
+                      <td>
+                        <div class="d-flex align-items-center gap-3 fs-6">
+                          <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><ion-icon name="eye-sharp"></ion-icon></a>
+                          <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><ion-icon name="pencil-sharp"></ion-icon></a>
+                          <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><ion-icon name="trash-sharp"></ion-icon></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--Table Row Ending-->
+
+                  </tbody>
+                </table>
+              </div>
+               <!--TABLE RESPONSIVE END-->
+              </div>
+
+               <!--ADD A TASK/EDIT A TASK START-->
+               <div class="table-responsive mt-5" id="Task-Form">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="border p-3 rounded">
+                      <div class="row">
+                        <div class="col-10">
+                          <h6 class="mb-0 text-uppercase">Task Form</h6>
+                        </div>
+                        <div class="col-2"><button type="button" class="btn btn-danger px-5">Delete</button></div>
+                      </div>
+                     <hr>
+
+                    <form class="row g-3">
+                      <div class="col-2">
+                        <label class="form-label">Employee Name</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-2">
+                        <label class="form-label">Area</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-2">
+                        <label class="form-label">Sub-Area</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-2">
+                        <label class="form-label">Type</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-2">
+                        <label class="form-label">Project</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-2">
+                        <label class="form-label">Co-Employee</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label">Task Detail</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      
+                      
+                      <div class="col-4">
+                        <label class="form-label">Status</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">Assigned By</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">Comments</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+
+                      
+                      <div class="col-3">
+                        <label class="form-label">Assigned Date</label>
+                        <input type="date" class="form-control">
+                                            </div>
+                      <div class="col-3">
+                        <label class="form-label">Start Date</label>
+                        <input type="date" class="form-control">              
+                              </div>
+                      <div class="col-3">
+                        <label class="form-label">Deadline Date</label>
+                          <input type="date" class="form-control">
+                      </div>
+                      <div class="col-3">
+                        <label class="form-label">End Date</label>
+                          <input type="date" class="form-control">
+                        </div>
+
+                      
+                      <div class="col-12">
+                        <div class="d-grid">
+                          <button type="submit" class="btn btn-custom">Add a new Task</button>
+                        </div>
+                      </div>
+                    </form>
+                    <!--ADD A TASK/EDIT A TASK END-->
+                  </div>
+                  </div>
+                </div>
+               </div>
+
+            </div>
+          </div>
+         </div>
+
+        </div>
+        <%- include('component/footer.ejs') %>

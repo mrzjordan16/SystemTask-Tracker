@@ -1,0 +1,267 @@
+<%- include('component/header.ejs') %>
+ <!--start wrapper-->
+    <div class="wrapper">
+       <!--start sidebar wrapper-->
+       
+
+       <%- include('component/side-bar.ejs') %>
+         <%- include('component/top-nav.ejs') %>
+
+       
+
+
+        <!-- start page content wrapper-->
+        <div class="page-content-wrapper">
+          <!-- start page content-->
+         <div class="page-content">
+
+          <!--start breadcrumb-->
+          <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+            <div class="breadcrumb-title pe-3">Dashboard</div>
+            <div class="ms-auto">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary">Settings</button>
+                <button type="button" class="btn btn-outline-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
+                  <a class="dropdown-item" href="javascript:;">Another action</a>
+                  <a class="dropdown-item" href="javascript:;">Something else here</a>
+                  <div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end breadcrumb-->
+
+             <div class="row" id="summary">
+                <div class="col-12 col-lg-12 col-xl-12 d-flex">
+                  <div class="card radius-10 bg-transparent shadow-none w-100">
+                    <div class="card-body p-0">
+                      <div class="row">
+                        <div class="col-3">
+                           <!--Card Container Start-->
+                      <div class="card radius-10">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center">
+                            <div class="widget-icon radius-10 bg-light-secondary text-secondary">
+                              <span class="iconify" data-icon="ic:baseline-work-off"></span>
+                            </div>
+                            <div class="text"><h4 class="my-3">Not Started</h4></div>
+                            <!-- <div class="fs-5 ms-auto">
+                              <ion-icon name="ellipsis-horizontal-sharp" role="img" class="md hydrated"
+                                aria-label="ellipsis horizontal sharp"></ion-icon>
+                            </div> -->
+                          </div>
+                          
+                          <div class="progress mt-1" style="height: 5px;">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 65%"></div>
+                          </div>
+                          <p class="mb-0 mt-2"><span class="float-end">2</span></p>
+                        </div>
+                      </div>
+                   <!--Card Container End-->
+                        </div>
+                        <div class="col-3">
+                           <!--Card Container Start-->
+                      <div class="card radius-10">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center">
+                            <div class="widget-icon radius-10 bg-light-info text-info">
+                              <span class="iconify" data-icon="ic:baseline-work"></span>
+                            </div>
+                            <div class="text"><h4 class="my-3">Started</h4></div>
+                            <!-- <div class="fs-5 ms-auto">
+                              <ion-icon name="ellipsis-horizontal-sharp" role="img" class="md hydrated"
+                                aria-label="ellipsis horizontal sharp"></ion-icon>
+                            </div> -->
+                          </div>
+                          
+                          <div class="progress mt-1" style="height: 5px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 65%"></div>
+                          </div>
+                          <p class="mb-0 mt-2"><span class="float-end">3</span></p>
+                        </div>
+                      </div>
+                   <!--Card Container End-->
+                        </div>
+                        <div class="col-3">
+                           <!--Card Container Start-->
+                      <div class="card radius-10">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center">
+                            <div class="widget-icon radius-10 bg-light-danger text-danger">
+                              <span class="iconify" data-icon="akar-icons:pause"></span>
+                            </div>
+                            <div class="text"><h4 class="my-3">Halted</h4></div>
+                            <!-- <div class="fs-5 ms-auto">
+                              <ion-icon name="ellipsis-horizontal-sharp" role="img" class="md hydrated"
+                                aria-label="ellipsis horizontal sharp"></ion-icon>
+                            </div> -->
+                          </div>
+                          
+                          <div class="progress mt-1" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"></div>
+                          </div>
+                          <p class="mb-0 mt-2"><span class="float-end">0</span></p>
+                        </div>
+                      </div>
+                   <!--Card Container End-->
+                        </div>
+                        <div class="col-3">
+                           <!--Card Container Start-->
+                      <div class="card radius-10">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center">
+                            <div class="widget-icon radius-10 bg-light-warning text-warning">
+                              <span class="iconify" data-icon="carbon:in-progress"></span>
+                            </div>
+                            <div class="text"><h4 class="my-3">On-Going</h4></div>
+                            <!-- <div class="fs-5 ms-auto">
+                              <ion-icon name="ellipsis-horizontal-sharp" role="img" class="md hydrated"
+                                aria-label="ellipsis horizontal sharp"></ion-icon>
+                            </div> -->
+                          </div>
+                          
+                          <div class="progress mt-1" style="height: 5px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
+                          </div>
+                          <p class="mb-0 mt-2"><span class="float-end">2</span></p>
+                        </div>
+                      </div>
+                   <!--Card Container End-->
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-6">
+                          <!--Card Container Start-->
+                      <div class="card radius-10">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center">
+                            <div class="widget-icon radius-10 bg-light-success text-success">
+                              <ion-icon name="wallet-sharp"></ion-icon>
+                            </div>
+                            <div class="text"><h4 class="my-3">Completed</h4></div>
+                            <!-- <div class="fs-5 ms-auto">
+                              <ion-icon name="ellipsis-horizontal-sharp" role="img" class="md hydrated"
+                                aria-label="ellipsis horizontal sharp"></ion-icon>
+                            </div> -->
+                          </div>
+                          
+                          <div class="progress mt-1" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                          </div>
+                          <p class="mb-0 mt-2"><span class="float-end">2</span></p>
+                        </div>
+                      </div>
+                   <!--Card Container End-->
+                        </div>
+
+                        <div class="col-6">
+                          <!--Card Container Start-->
+                          <div class="card radius-10" style="height:125px">
+                            <div class="card-body">
+                              <div class="d-flex align-items-center">
+                                <div class="widget-icon radius-10 bg-light-success text-success">
+                                  <ion-icon name="wallet-sharp"></ion-icon>
+                                </div>
+                                <div class="text"><h4 class="my-3">Total Task:</h4></div>
+                                <div class="text"><h4 class="my-3">9</h4></div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Card Container End-->
+                        </div>
+
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+             </div><!--end row-->
+
+
+             
+
+             <div class="card radius-10 w-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0">Recent Updated Task</h6>
+                  <div class="fs-5 ms-auto dropdown">
+                     <div class="dropdown-toggle dropdown-toggle-nocaret cursor-pointer" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></div>
+                       <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="#">Action</a></li>
+                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                       </ul>
+                   </div>
+                 </div>
+                </div> 
+                <div class="table-responsive mt-2">
+                  <table class="table align-middle mb-0">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Employee Name</th>
+                        <th>Area</th>
+                        <th>Sub-Area</th>
+                        <th>Type</th>
+                        <th>Project</th>
+                        <th>Task Detail</th>
+                        <th>Status</th>
+                        <th>Co-Employee</th>
+                        <th>Assigned Date</th>
+                        <th>Start Date</th>
+                        <th>DeadLine</th>
+                        <th>End Date</th>
+                        <th>Assigned By</th>
+                        <th>Comments</th>
+                        <th>Edit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                     <!--Table Row Starting-->
+                     
+                     <% recentTask.map((RTvar)=>{ %>
+                      <tr>
+                        <td><%= RTvar.EmployeeName %></td>
+                        <td>
+                            <h6 class="product-name mb-1"><%= RTvar.Area %></h6>
+                        </td>
+                        <td><%= RTvar.SubArea %></td>
+                        <td><%= RTvar.Type %></td>
+                        <td><%= RTvar.Project %></td>
+                        <td><%= RTvar.TaskDetail %></td>
+                        <td><span class="badge alert-<%= RTvar.StatusColor %>"><%= RTvar.Status %></span></td>
+                        <td><%= RTvar.CoEmployee %></td>
+                        <td><%= RTvar.AssignedDate %></td>
+                        <td><%= RTvar.StartDate %></td>
+                        <td><%= RTvar.Deadline %></td>
+                        <td><%= RTvar.EndDate %></td>
+                        <td><%= RTvar.AssignedBy %></td>
+                        <td><%= RTvar.Comments %></td>
+                        <td>
+                          <div class="d-flex align-items-center gap-3 fs-6">
+                            <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><ion-icon name="eye-sharp"></ion-icon></a>
+                            <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><ion-icon name="pencil-sharp"></ion-icon></a>
+                            <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><ion-icon name="trash-sharp"></ion-icon></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <!--Table Row Ending-->
+                      <% }) %>
+                    </tbody>
+                  </table>
+                </div> 
+
+              </div>
+            </div>
+          </div>
+          <!-- end page content-->
+         </div>
+         <!--end page content wrapper-->
+
+
+  <%- include('component/footer.ejs') %>

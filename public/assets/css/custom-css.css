@@ -1,0 +1,113 @@
+/*
+*
+* LOGIN PAGE
+*
+*/
+.wrapper{
+    height:100vh;
+}
+.form-control:focus{
+    background-color: #fff;
+} 
+
+.form-control:focus,.form-select:focus,.form-check-input:focus{
+    border-color: #686d7e;
+    box-shadow: 0 0 0 .25rem rgba(104, 109, 126, 0.7)
+} 
+
+.form-check-input:checked{
+    border-color: #da6d40 ;
+    background-color:#da6d40 ;
+    box-shadow: 0 0 0 .25rem rgba(218, 109, 64, 0.7)
+}
+
+
+
+.btn-custom{
+    background-color:#da6d40;
+    color:white;
+}
+ .btn-custom:hover{
+    background-color: #686d7e;
+    color:white;
+}
+
+
+.login-logo{
+    background-image:url('./../images/authentication/logo.jpg');
+    width:250px;
+    height:150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 auto;
+}
+
+
+/*
+*
+* DASHBOARD INDEX PAGE
+*
+*/
+.searchbar,.mini-sidebar-wrapper .mini-sidebar-header{
+    display:none;
+}
+.mini-sidebar-wrapper{
+    top:65px;
+    height:100%;
+}
+
+.top-header{
+    left:0;
+}
+
+.top-header .logo{
+    background-image:url('./../images/logo_header.jpg');
+    width:300px;
+    height:50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wrapper.toggled2 .sidebar-submenu-wrapper{
+    display:none;
+}
+
+
+#summary .card .text{
+    margin-left:10px;
+}
+
+#dashboard{
+    height:100vh;
+}
+.index-footer{
+    position:relative;
+}
+
+/**
+*
+*   TASK SHEET
+*/
+#task-sheet-completed{
+    margin-top:100px;
+}
+
+#complete-task-sheet-upper,#complete-task-sheet{
+    display:block;
+}
+
+#Task-Form{
+    display:none;
+}
+/**
+*
+* COMMON MEDIA QUERY
+*
+*/
+@media screen and (min-width:1025px){
+    .task-update{
+        padding-left:100px;
+    }
+}

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en" class="light-theme">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--plugins-->
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--Theme Styles-->
+    <link href="assets/css/dark-theme.css" rel="stylesheet" />
+    <link href="assets/css/header-colors.css" rel="stylesheet" />
+    <link href="assets/css/custom-css.css" rel="stylesheet"/>
+    <title>DevOps Panel | System Limited</title>
+  </head>
+  <body>
+    
+
+ <!--start wrapper-->
+    <div class="wrapper">
+       <!--start sidebar wrapper-->
+        <div class="mini-sidebar-wrapper">
+           <div class="mini-sidebar-header">
+              <img src="assets/images/logo-icon-2.png" alt="" class="logo-icon">
+           </div>
+           <div class="mini-sidebar-navigation d-flex align-items-center justify-content-center">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboards">
+                <a href="/index.html" class="nav-link"><ion-icon name="home-sharp"></ion-icon></a>
+              </li>
+              <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Task Sheet">
+                <a href="#" class="nav-link">
+                  <span class="iconify" data-icon="flat-color-icons:data-sheet"></span>
+                </a>
+              </li>
+              
+            </ul>
+            </div>
+            <div class="toggle-menu-wrapper">
+               <div class="toggle-menu-button">
+                <ion-icon name="chevron-back-sharp"></ion-icon>      
+               </div>
+            </div>
+         </div>
+
+        
+        <!--end sidebar wrapper-->
+
+         <!--start top header-->
+         <header class="top-header">
+          <nav class="navbar navbar-expand gap-3">
+            <div class="mobile-menu-button"><ion-icon name="menu-sharp"></ion-icon></div>
+            <div class="logo"></div>
+            <!-- <form class="searchbar">
+              <div class="position-absolute top-50 translate-middle-y search-icon ms-3"><ion-icon name="search-sharp"></ion-icon></div>
+              <input class="form-control" type="text" placeholder="Search for anything">
+              <div class="position-absolute top-50 translate-middle-y search-close-icon"><ion-icon name="close-sharp"></ion-icon></div>
+           </form> -->
+           <div class="top-navbar-right ms-auto">
+
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item mobile-search-button">
+                <a class="nav-link" href="javascript:;">
+                  <div class="">
+                    <ion-icon name="search-sharp"></ion-icon>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dark-mode-icon" href="javascript:;">
+                  <div class="mode-icon">
+                    <ion-icon name="moon-sharp"></ion-icon> 
+                  </div>
+                </a>
+              </li>
+             
+             
+              <li class="nav-item dropdown dropdown-user-setting">
+                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                  <div class="user-setting">
+                    <img src="assets/images/avatars/06.png" class="user-img" alt="">
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                     <a class="dropdown-item" href="javascript:;">
+                       <div class="d-flex flex-row align-items-center gap-2">
+                          <img src="assets/images/avatars/06.png" alt="" class="rounded-circle" width="54" height="54">
+                          <div class="">
+                            <h6 class="mb-0 dropdown-user-name">Jhon Deo</h6>
+                            <small class="mb-0 dropdown-user-designation text-secondary">UI Developer</small>
+                          </div>
+                       </div>
+                     </a>
+                   </li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li>
+                      <a class="dropdown-item" href="javascript:;">
+                         <div class="d-flex align-items-center">
+                           <div class=""><ion-icon name="person-outline"></ion-icon></div>
+                           <div class="ms-3"><span>Profile</span></div>
+                         </div>
+                       </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:;">
+                         <div class="d-flex align-items-center">
+                           <div class=""><ion-icon name="settings-outline"></ion-icon></div>
+                           <div class="ms-3"><span>Setting</span></div>
+                         </div>
+                       </a>
+                    </li>
+                   
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:;">
+                         <div class="d-flex align-items-center">
+                           <div class=""><ion-icon name="log-out-outline"></ion-icon></div>
+                           <div class="ms-3"><span>Logout</span></div>
+                         </div>
+                       </a>
+                    </li>
+                </ul>
+              </li>
+             </ul>
+            </div>
+          </nav>
+        </header>
+      <!--end top header-->
+
+
+
+         <div class="container-fluid task-update" id="task-sheet-completed">
+           <div id="complete-task-sheet-upper">
+          <div class="row">
+          <div class="col-8">
+            <div class="button-group">
+              <button type="button" class="btn btn-warning px-5 m-3">Add a New User</button>
+              <!-- <button type="button" class="btn btn-warning px-5">Edit Whole Task</button> -->
+              <button class="btn btn-outline-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example2" type="button"><span>Excel</span></button>
+          </div>
+          </div>
+          <div class="col-4">
+             <div class="row">
+               <div class="col-4">
+                <label>Filter By</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected="">Type</option>
+                  <option value="1">Admin</option>
+                  <option value="2">User</option>
+
+                </select>
+               </div>
+             </div>
+          </div>
+          </div>
+        </div>
+          <div class="card radius-10">
+            <div class="card-body">
+              <div id="complete-task-sheet">
+              <div class="d-flex align-items-center" >
+                <h6 class="mb-0">User</h6>
+                <div class="fs-5 ms-auto dropdown">
+                   <div class="dropdown-toggle dropdown-toggle-nocaret cursor-pointer" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></div>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><hr class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                 </div>
+               </div>
+               <!--TABLE RESPONSIVE START-->
+               <div class="table-responsive mt-2">
+                <table class="table align-middle mb-0" id="taskSheet-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Employee Name</th>
+                      <th>Password</th>
+                      <th>Designation</th>
+                      <th>Type</th>
+                      <th>Edit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                   <!--Table Row Starting-->
+                    <tr>
+                      <td>
+                          <h6 class="product-name mb-1">Osman Shaikh</h6>
+                      </td>
+                      <td>************</td>
+                      <td>Consultant</td>
+                      <td>Admin</td>
+                      <td>
+                        <div class="d-flex align-items-center gap-3 fs-6">
+                          <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><ion-icon name="eye-sharp"></ion-icon></a>
+                          <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><ion-icon name="pencil-sharp"></ion-icon></a>
+                          <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><ion-icon name="trash-sharp"></ion-icon></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--Table Row Ending-->
+
+                  </tbody>
+                </table>
+              </div>
+               <!--TABLE RESPONSIVE END-->
+              </div>
+
+               <!--ADD A TASK/EDIT A TASK START-->
+               <div class="table-responsive mt-5" id="Task-Form">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="border p-3 rounded">
+                      <div class="row">
+                        <div class="col-10">
+                          <h6 class="mb-0 text-uppercase">User Form</h6>
+                        </div>
+                        <div class="col-2"><button type="button" class="btn btn-danger px-5">Delete</button></div>
+                      </div>
+                     <hr>
+
+                    <form class="row g-3">
+                      <div class="col-3">
+                        <label class="form-label">Employee Name</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-3">
+                        <label class="form-label">Password</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-3">
+                        <label class="form-label">Designation</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-3">
+                        <label class="form-label">Type</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter name">
+                      </div>
+                      <div class="col-12">
+                        <div class="d-grid">
+                          <button type="submit" class="btn btn-custom">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                    <!--ADD A TASK/EDIT A TASK END-->
+                  </div>
+                  </div>
+                </div>
+               </div>
+
+            </div>
+          </div>
+         </div>
+
+        </div>
+        <!--start footer-->
+           <footer class="footer index-footer">
+            <div class="footer-text">
+               Copyright © 2021. System Ltd | Dev OPS Panel. All right reserved.
+            </div>
+            </footer>
+          <!--end footer-->
+        
+
+        <!--Start Back To Top Button-->
+		     <a href="javaScript:;" class="back-to-top"><ion-icon name="arrow-up-outline"></ion-icon></a>
+         <!--End Back To Top Button-->
+  
+         <!--start switcher-->
+         <div class="switcher-body">
+          <button class="btn btn-primary btn-switcher shadow-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><ion-icon name="color-palette-sharp" class="me-0"></ion-icon></button>
+          <div class="offcanvas offcanvas-end shadow border-start-0 p-2" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Theme Customizer</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <h6 class="mb-0">Theme Variation</h6>
+              <hr>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="LightTheme" value="option1" checked>
+                <label class="form-check-label" for="LightTheme">Light</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="DarkTheme" value="option2">
+                <label class="form-check-label" for="DarkTheme">Dark</label>
+              </div>
+              <hr/>
+              <h6 class="mb-0">Header Colors</h6>
+              <hr/>
+              <div class="header-colors-indigators">
+                <div class="row row-cols-auto g-3">
+                  <div class="col">
+                    <div class="indigator headercolor1" id="headercolor1"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor2" id="headercolor2"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor3" id="headercolor3"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor4" id="headercolor4"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor5" id="headercolor5"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor6" id="headercolor6"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor7" id="headercolor7"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator headercolor8" id="headercolor8"></div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <h6 class="mb-0">Sidebar Colors</h6>
+              <hr/>
+              <div class="header-colors-indigators">
+                <div class="row row-cols-auto g-3">
+                  <div class="col">
+                    <div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
+                  </div>
+                  <div class="col">
+                    <div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <!--end switcher-->
+
+
+         <!--start overlay-->
+          <div class="overlay"></div>
+         <!--end overlay-->
+
+     </div>
+  <!--end wrapper-->
+
+
+    <!-- JS Files-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--plugins-->
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/chartjs/chart.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+
+
+  </body>
+</html>
